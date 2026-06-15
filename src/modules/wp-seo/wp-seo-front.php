@@ -40,7 +40,6 @@ function qtranxf_wpseo_add_filters_front(): void {
     // and other languages are missed.
     add_filter( 'Yoast\WP\SEO\should_index_indexables', '__return_false' );
     add_filter( 'wpseo_should_save_indexable', '__return_false' );
-    add_filter( 'wpseo_indexing_data', '__return_false' );
 
     // TODO: rewrite Yoast hooks, second argument is Indexable_Presentation, not a string giving the requested URL.
     add_filter( 'wpseo_canonical', 'qtranxf_checkCanonical', 10, 2 );
